@@ -1,0 +1,296 @@
+{% extends "trips/base.html" %} 
+{% load static %} 
+{% block content %}
+
+
+		<!-- =========== Start All Hotel In Grid View =================== -->
+		<section class="gray-bg">
+			<div class="container">
+				
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="tr-single-box">
+							<div class="tr-single-header">
+								<h4><i class="fa fa-star-o"></i>Booking Information</h4>
+							</div>
+							<div class="tr-single-body">
+								<div class="booking-price-detail side-list no-border">
+									<h5>Tour & Destination</h5>
+									<ul>
+										<li>Destination<strong class="pull-right">Rick New Palm, NewYork</strong></li>
+										<li>Person<strong class="pull-right">5 Person</strong></li>
+										<li>From<strong class="pull-right">10 jan 2019</strong></li>
+										<li>Tour Days<strong class="pull-right">4 Days</strong></li>
+										<li>Guide<strong class="pull-right">Alina Charlies</strong></li>
+									</ul>
+								</div>
+								<div class="booking-price-detail side-list no-border">
+									<h5>Hotel Booking</h5>
+									<ul>
+										<li>Hotel<strong class="pull-right">Resort valley</strong></li>
+										<li>Night<strong class="pull-right">3 night</strong></li>
+										<li>Person<strong class="pull-right">5 Person</strong></li>
+									</ul>
+								</div>
+								<div class="booking-price-detail side-list no-border">
+									<h5>Features include</h5>
+									<div class="include-features">
+										<span class="features-tag">Free Parking</span>
+										<span class="features-tag">Indoor pool</span>
+										<span class="features-tag">Security cameras</span>
+										<span class="features-tag">Hot Water</span>
+										<span class="features-tag">Spa/Sauna</span>
+										<span class="features-tag">Free Wifi</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6">
+						<div class="tr-single-box">
+							<div class="tr-single-header">
+								<h4><i class="ti-gift"></i>Package information</h4>
+							</div>
+							<div class="tr-single-body">
+								<div class="booking-price-detail side-list no-border">
+									<h5>Your Dates</h5>
+									<ul>
+										<li>Appearing<strong class="pull-right">12 Jan 2018</strong></li>
+										<li>Disappearing<strong class="pull-right">20 jan 2018</strong></li>
+									</ul>
+								</div>
+								<div class="booking-price-detail side-list no-border">
+									<h5>Hotel Charge</h5>
+									<ul>
+										<li>Price<strong class="pull-right">$70/night</strong></li>
+										<li>Total<strong class="pull-right">$350</strong></li>
+									</ul>
+								</div>
+								<div class="booking-price-detail side-list no-border">
+									<h5>Guide Charge</h5>
+									<ul>
+										<li>Price<strong class="pull-right">$50/day</strong></li>
+										<li>Total<strong class="pull-right">$250</strong></li>
+									</ul>
+								</div>
+								<div class="booking-price-detail side-list no-border">
+									<h5>Your Stay</h5>
+									<ul>
+										<li>Deposit<strong class="pull-right">$300.00</strong></li>
+										<li>V.A.T<strong class="pull-right">$28.00</strong></li>
+									</ul>
+								</div>
+								<div class="booking-price-detail side-list no-border">
+									<ul>
+										<li>Total Cost<strong class="theme-cl pull-right">$1170</strong></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="tr-single-box">
+							<div class="tr-single-header">
+								<h4><i class="ti-write"></i>Billing Information</h4>
+							</div>
+							<div class="tr-single-body">
+								<div class="row">
+									<div class="col-sm-6">
+										<label>Name</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-6">
+										<label>Email</label>
+										<input type="email" class="form-control">
+									</div>
+									<div class="col-sm-6">
+										<label>Phone</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-6">
+										<label>City</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-6">
+										<label>State</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-6">
+										<label>Country</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-6">
+										<label>Address</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-6">
+										<label>Zip</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6">
+						<div class="tr-single-box">
+							<div class="tr-single-header">
+								<h4><i class="ti-credit-card"></i>Payment Methode</h4>
+							</div>
+							<div class="tr-single-body">
+								<!-- Paypal Option -->
+								<div class="payment-card">
+									<header class="payment-card-header cursor-pointer" data-toggle="collapse" data-target="#paypal" aria-expanded="true">
+										<div class="payment-card-title flexbox">
+											<h4>PayPal</h4>
+										</div>
+										<div class="pull-right">
+											<img src="{% static 'assets/img/paypal.png' %}" class="img-responsive" alt=""> 
+										</div>
+									</header>
+									<div class="collapse" id="paypal" aria-expanded="false">
+										<div class="payment-card-body">
+										  <div class="row mrg-bot-20">
+												<div class="col-sm-6">
+													<span class="custom-checkbox d-block font-12">
+														<input type="checkbox" id="privacy">
+														<label for="privacy"></label>
+														Have a promo code?
+													</span>
+													<input type="text" class="form-control">
+												</div>
+												<div class="col-sm-6 padd-top-10 text-right">
+													<label>Total Order</label>
+													<h2 class="mrg-0"><span class="theme-cl">$</span>1170</h2>
+												</div>
+												<div class="col-sm-12 bt-1 padd-top-15">
+													<span class="custom-checkbox d-block font-12">
+														<input type="checkbox" id="privacy">
+														<label for="privacy"></label>
+														By ordering you are agreeing to our <a href="#" class="theme-cl">Privacy policy</a>.
+													</span>
+													<button type="submit" class="btn btn-m btn-success">Checkout</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<!-- Debit card option -->
+								<div class="payment-card">
+									<header class="payment-card-header cursor-pointer" data-toggle="collapse" data-target="#debit-credit" aria-expanded="true">
+										<div class="payment-card-title flexbox">
+											<h4>Credit / Debit Card</h4>
+										</div>
+										<div class="pull-right">
+											<img src="{% static 'assets/img/credit.png' %}" class="img-responsive" alt=""> 
+										</div>
+									</header>
+									<div class="collapse" id="debit-credit" aria-expanded="false">
+										<div class="payment-card-body">
+										   <div class="row mrg-bot-20">
+												<div class="col-sm-6">
+													<label>Card Holder Name</label>
+													<input type="text" class="form-control" placeholder="Daniel Singh">
+												</div>
+												<div class="col-sm-6">
+													<label>Card No.</label>
+													<input type="email" class="form-control" placeholder="1235 4785 4758 1458">
+												</div>
+											</div>
+											<div class="row mrg-bot-20">
+												<div class="col-sm-4 col-md-4">
+													<label>Expire Month</label>
+													<input type="text" class="form-control" placeholder="07">
+												</div>
+												<div class="col-sm-4 col-md-4">
+													<label>Expire Year</label>
+													<input type="email" class="form-control" placeholder="2020">
+												</div>
+												<div class="col-sm-4 col-md-4">
+													<label>CCV Code</label>
+													<input type="email" class="form-control" placeholder="258">
+												</div>
+											</div>
+											<div class="row mrg-bot-20">
+												<div class="col-sm-7">
+													<span class="custom-checkbox d-block font-12">
+														<input type="checkbox" id="privacy">
+														<label for="privacy"></label>
+														Have a promo code?
+													</span>
+													<input type="text" class="form-control">
+												</div>
+												<div class="col-sm-5 padd-top-10 text-right">
+													<label>Total Order</label>
+													<h2 class="mrg-0"><span class="theme-cl">$</span>1170</h2>
+												</div>
+												<div class="col-sm-12 bt-1 padd-top-15">
+													<span class="custom-checkbox d-block font-12">
+														<input type="checkbox" id="privacy">
+														<label for="privacy"></label>
+														By ordering you are agreeing to our <a href="#" class="theme-cl">Privacy policy</a>.
+													</span>
+													<button type="submit" class="btn btn-m btn-success">Checkout</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		<!-- =========== End All Hotel In Grid View =================== -->
+			
+		<!-- ============== Before Footer ====================== -->
+		<section class="before-footer bt-1 bb-1">
+			<div class="container-fluid padd-0 full-width">
+			
+				<div class=" col-md-2 col-sm-2 br-1 mbb-1">
+					<div class="data-flex">
+						<h4>Contact Us!</h4>
+					</div>
+				</div>
+				
+				<div class="col-md-3 col-sm-3 br-1 mbb-1">
+					<div class="data-flex text-center">
+					53 Boulevard Victor Hugo 44200 Nantes, France
+					</div>
+				</div>
+				
+				<div class="col-md-3 col-sm-3 br-1 mbb-1">
+					<div class="data-flex text-center">
+						<span class="d-block mrg-bot-0">06 52 52 20 30</span>
+						<a href="#" class="theme-cl"><strong>hello@gmail.com</strong></a>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-4 padd-0">
+					<div class="data-flex padd-0">
+						<ul class="social-share">
+							<li><a href="#"><i class="fa fa-facebook theme-cl"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus theme-cl"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter theme-cl"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin theme-cl"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		<!-- =================== Before Footer ====================== -->
+			
+
+
+{% endblock %}

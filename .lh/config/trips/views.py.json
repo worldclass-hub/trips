@@ -1,0 +1,26 @@
+{
+    "sourceFile": "config/trips/views.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1740417758879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1740428527026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,4 +3,8 @@\n \n def home(request):\n     destinations = Destination.objects.all()\n     return render(request, \"trips/home.html\", {\"destinations\": destinations})\n+\n+\n+def find_guide(request):\n+    return render(request, 'trips/find_guide.html')\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1740430740180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,9 @@\n     return render(request, \"trips/home.html\", {\"destinations\": destinations})\n \n \n def find_guide(request):\n-    return render(request, 'trips/find_guide.html')\n\\ No newline at end of file\n+    return render(request, 'trips/find_guide.html')\n+\n+\n+def dashboard(request):\n+    return render(request, 'trips/dashboard.html')\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1740417758879,
+            "name": "Commit-0",
+            "content": "from django.shortcuts import render\nfrom .models import Destination\n\ndef home(request):\n    destinations = Destination.objects.all()\n    return render(request, \"trips/home.html\", {\"destinations\": destinations})\n"
+        }
+    ]
+}

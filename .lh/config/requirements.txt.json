@@ -1,0 +1,18 @@
+{
+    "sourceFile": "config/requirements.txt",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1740417213381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1740417213381,
+            "name": "Commit-0",
+            "content": "asgiref==3.8.1\nDjango==4.2.19\nsqlparse==0.5.3\ntyping_extensions==4.12.2\nbeautifulsoup4==4.12.3\ncachetools==5.3.3\ncertifi==2024.7.4\ncharset-normalizer==3.3.2\ncloudinary==1.39.1\ncrispy-bootstrap5==2023.10\ndistlib==0.3.8\ndjango-bootstrap-v5==1.0.11\ndjango-cloudinary-storage==0.3.0\ndjango-crispy-forms==2.1\ndjango-environ==0.11.2\ndjango-gmailapi-backend==0.3.2\ndjango-jazzmin==2.6.0\ndjango-phonenumber-field==7.3.0\ndjango-postgresql==0.0.3\ndjango-widget-tweaks==1.5.0\nessential==0.0.1\nez_setup==0.9\nfilelock==3.13.3\nfontawesomefree==6.5.1\ngmail==0.6.3\ngoogle-api-core==2.18.0\ngoogle-api-python-client==2.125.0\ngoogle-auth==2.29.0\ngoogle-auth-httplib2==0.2.0\ngoogleapis-common-protos==1.63.0\ngunicorn==20.1.0\nhttplib2==0.22.0\nidna==3.6\nmysql-connector-python==8.3.0\npackaging==23.2\nphonenumbers==8.13.30\npi==0.1.2\nPillow==9.1.0\npipenv==2023.12.1\nplatformdirs==4.2.0\npostgres==4.0\nproto-plus==1.23.0\nprotobuf==4.25.3\npsycopg==3.1.18\npsycopg2-binary==2.9.9\npsycopg2-pool==1.2\npyasn1==0.6.0\npyasn1_modules==0.4.0\npykg-config==1.3.0\nPyMySQL==1.1.0\npyparsing==3.1.2\npyproject_hooks==1.0.0\nrequests==2.31.0\nrsa==4.9\nsecure-smtplib==0.1.1\nsix==1.16.0\nsomepackage==1.2.3\nsoupsieve==2.5\ntomli==2.0.1\nuritemplate==4.1.1\nurllib3==2.2.1\nvirtualenv==20.25.1\nwhitenoise==6.0.0\n"
+        }
+    ]
+}

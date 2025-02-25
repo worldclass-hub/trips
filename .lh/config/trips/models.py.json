@@ -1,0 +1,18 @@
+{
+    "sourceFile": "config/trips/models.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1740417730582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1740417730582,
+            "name": "Commit-0",
+            "content": "from django.db import models\nfrom django.contrib.auth.models import User\n\nclass Destination(models.Model):\n    name = models.CharField(max_length=255)\n    description = models.TextField()\n    image = models.ImageField(upload_to=\"destinations/\", blank=True, null=True)\n\n    def __str__(self):\n        return self.name\n\nclass Itinerary(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE)\n    title = models.CharField(max_length=255)\n    start_date = models.DateField()\n    end_date = models.DateField()\n    notes = models.TextField(blank=True, null=True)\n\n    def __str__(self):\n        return self.title\n"
+        }
+    ]
+}

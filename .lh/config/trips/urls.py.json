@@ -1,0 +1,22 @@
+{
+    "sourceFile": "config/trips/urls.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1740417821757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1740428477651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n from django.urls import path\n-from .views import home\n+from .views import home, find_guide\n \n urlpatterns = [\n     path('', home, name='home'),\n+    path('find_guide', find_guide, name='find_guide'),\n ]\n"
+                }
+            ],
+            "date": 1740417821757,
+            "name": "Commit-0",
+            "content": "from django.urls import path\nfrom .views import home\n\nurlpatterns = [\n    path('', home, name='home'),\n]\n"
+        }
+    ]
+}
